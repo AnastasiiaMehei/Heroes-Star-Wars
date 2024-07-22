@@ -1,7 +1,12 @@
-@import '@xyflow/react/dist/style.css';
+/* src/styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'StarJedi';
+  src: url('/fonts/Starjedi.ttf') format('truetype');
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -39,4 +44,10 @@ body {
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+/* Star Wars title styles */
+.star-wars-title {
+  font-family: 'StarJedi', sans-serif;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5);
 }
