@@ -1,7 +1,6 @@
-// pages/index.js
 import React, { useState } from 'react';
-import HeroList from '../components/HeroList';
-import HeroGraph from '../components/HeroGraph';
+import HeroList from '../components/HeroList/HeroList.js';
+import HeroGraph from '../components//HeroGraph/HeroGraph.js';
 
 const Home = () => {
   const [selectedHero, setSelectedHero] = useState(null);
