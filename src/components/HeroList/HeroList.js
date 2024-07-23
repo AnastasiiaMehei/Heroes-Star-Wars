@@ -8,6 +8,7 @@ const HeroList = ({ onSelectHero }) => {
   useEffect(() => {
     const fetchHeroes = async () => {
       try {
+        // fetch heroes from the Star Wars API for the current page
         const response = await axios.get(
           `https://swapi.dev/api/people/?page=${page}`,
         );
@@ -17,6 +18,7 @@ const HeroList = ({ onSelectHero }) => {
             hero.url.match(/\/(\d+)\/$/)[1]
           }.jpg`,
         }));
+        // update the state with the new heroes
         setHeroes((prevHeroes) => [...prevHeroes, ...heroesWithImages]);
       } catch (error) {
         console.error('Error fetching heroes:', error);
@@ -25,7 +27,7 @@ const HeroList = ({ onSelectHero }) => {
 
     fetchHeroes();
   }, [page]);
-
+  // function to load more heroes by incrementing the page number
   const loadMore = () => {
     setPage((prevPage) => prevPage + 1);
   };
