@@ -31,24 +31,24 @@ const HeroList = ({ onSelectHero }) => {
   };
 
   return (
-    <div>
-      <ul>
+    <div className="hero-list-container">
+      <ul className="hero-list">
         {heroes.map((hero) => (
           <li
             key={hero.name}
             onClick={() => onSelectHero(hero)}
             className="cursor-pointer flex items-center mb-2"
           >
-            <img
-              src={hero.imageUrl}
-              alt={hero.name}
-              className="w-10 h-10 rounded-full mr-2"
-            />
+            <img src={hero.imageUrl} alt={hero.name} className="hero-image" />
             {hero.name}
           </li>
         ))}
       </ul>
-      <button onClick={loadMore}>Load More</button>
+      {heroes.length > 0 && (
+        <button onClick={loadMore} className="load-more-button">
+          Load More
+        </button>
+      )}
     </div>
   );
 };
