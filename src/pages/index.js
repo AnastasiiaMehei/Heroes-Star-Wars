@@ -11,7 +11,7 @@ const Home = () => {
       <h1 className="star-wars-title">Star Wars Heroes</h1>
       <div className="flex" style={{ height: '80vh' }}>
         <div className="w-1/3">
-          {/* HeroList component to display the list of heroes */}
+          {/* heroList component to display the list of heroes */}
 
           <HeroList
             onSelectHero={(hero) => {
@@ -21,7 +21,7 @@ const Home = () => {
           />
         </div>
         <div className="w-2/3" style={{ height: '100%', position: 'relative' }}>
-          {/* HeroGraph component to display the graph of the selected hero */}
+          {/* heroGraph component to display the graph of the selected hero */}
           {selectedHero && <HeroGraph hero={selectedHero} />}
         </div>
       </div>

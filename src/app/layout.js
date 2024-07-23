@@ -1,8 +1,5 @@
-// import { Inter } from 'next/font/google';
 import './global.css';
-
-// const inter = Inter({ subsets: ['latin'] });
-
+import React from 'react';
 export const metadata = {
   title: 'Star Wars Heroes',
   description: 'Explore the heroes of the Star Wars universe',
