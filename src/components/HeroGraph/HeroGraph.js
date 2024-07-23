@@ -70,6 +70,7 @@ const HeroGraph = ({ hero }) => {
 
     fetchHeroDetails();
   }, [hero]);
+
   // render the ReactFlow component with nodes and edges
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>

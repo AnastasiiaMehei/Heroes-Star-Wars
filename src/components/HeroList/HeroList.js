@@ -27,6 +27,7 @@ const HeroList = ({ onSelectHero }) => {
 
     fetchHeroes();
   }, [page]);
+
   // function to load more heroes by incrementing the page number
   const loadMore = () => {
     setPage((prevPage) => prevPage + 1);

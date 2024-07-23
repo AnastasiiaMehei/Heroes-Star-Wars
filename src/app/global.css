@@ -5,6 +5,8 @@
   font-family: 'StarJedi';
   src: url('/fonts/Starjedi.ttf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -68,4 +70,7 @@ button:hover {
 .load-more-button {
   margin-top: 10px;
   transform: translateX(-90px);
+}
+.inter-font {
+  font-family: 'Inter', sans-serif;
 }
